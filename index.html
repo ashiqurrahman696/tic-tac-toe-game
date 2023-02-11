@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+	<h2>Tic Tac Toe Game</h2>
+	<div class="game-level">
+		<div class="grid">
+			<label>Grid size:</label>
+			<select name="grid" id="grid-size" onchange="updateMatchOptions();">
+				<option value="">Select grid size</option>
+				<option value="3x3">3x3</option>
+				<option value="4x4">4x4</option>
+				<option value="5x5">5x5</option>
+				<option value="6x6">6x6</option>
+				<option value="7x7">7x7</option>
+				<option value="8x8">8x8</option>
+				<option value="9x9">9x9</option>
+				<option value="10x10">10x10</option>
+			</select>
+		</div>
+		<div class="match">
+			<label>Number of matched symbols:</label>
+			<select name="grid" id="match-option">
+				<option value="">Select number of matches</option>
+			</select>
+		</div>
+		<center>
+			<button class="btn start-btn" type="button">Start Game</button>
+		</center>
+	</div>
+	<div class="game hide">
+		<p>O: <span class="match-number"></span></p>
+		<p class="player">X's turn</p>
+		<p >X <span id="x-score">0</span> - <span id="o-score">0</span> O</p>
+		<div class="board"></div>
+		<div class="winner"></div>
+		<div class="buttons">
+			<button class="btn new-game-btn" type="button">New Game</button>
+			<button class="btn restart-btn" type="button">Restart Game</button>
+		</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>

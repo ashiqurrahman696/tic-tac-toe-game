@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+	background-color: #282159;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+h2{
+	margin-bottom: 10px;
+}
+.game-level{
+	max-width: 100%;
+	width: 400px;
+	padding: 10px;
+}
+.game-level.hide, .game.hide{
+	display: none;
+}
+.game-level label{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+.game-level select{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.game-level select:focus{
+	outline: none;
+}
+.game{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.game p{
+	margin-bottom: 15px;
+}
+#x-score{
+	margin-left: 15px;
+}
+#o-score{
+	margin-right: 15px;
+}
+.board{
+	width: 320px;
+	height: 320px;
+	display: grid;
+}
+.board .cell{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	cursor: pointer;
+}
+.cell.highlight{
+	background-color: #a0f8ff;
+}
+.cell.inactive{
+	pointer-events: none;
+}
+.winner{
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: 400;
+}
+.btn{
+	border: none;
+	background-color: #435ad7;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.new-game-btn{
+	margin-right: 10px;
+	background-color: #189643;
+}
