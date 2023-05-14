@@ -1589,8 +1589,8 @@ function playGame(){
 		else if(gridSize.value == "7x7") cell.style.fontSize = "22px";
 		else if(gridSize.value == "8x8") cell.style.fontSize = "20px";
 		cell.addEventListener('click', () => {
-			count++;
 			if (cell.innerHTML !== "") return;
+			count++;
 			cell.innerHTML = playerTurn;
 			if (count == cellNum) {
 				winnerText.innerHTML = "Match tied";
